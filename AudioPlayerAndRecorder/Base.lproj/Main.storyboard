@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3S-41-gvc">
+                                <rect key="frame" x="145.5" y="106" width="123" height="30"/>
+                                <state key="normal" title="开始（继续）录制"/>
+                                <connections>
+                                    <action selector="startRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c21-ry-jgb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT3-IT-19X">
+                                <rect key="frame" x="176" y="156" width="62" height="30"/>
+                                <state key="normal" title="暂停录制"/>
+                                <connections>
+                                    <action selector="pauseRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xze-h7-xP0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gr3-dO-M0N">
+                                <rect key="frame" x="176" y="317" width="62" height="30"/>
+                                <state key="normal" title="开始播放"/>
+                                <connections>
+                                    <action selector="startPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaQ-5Y-400"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-xU-S0P">
+                                <rect key="frame" x="176" y="367" width="62" height="30"/>
+                                <state key="normal" title="暂停播放"/>
+                                <connections>
+                                    <action selector="pausePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eB-S4-I23"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofd-2D-9UZ">
+                                <rect key="frame" x="176" y="417" width="62" height="30"/>
+                                <state key="normal" title="停止播放"/>
+                                <connections>
+                                    <action selector="stopPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f77-QP-Fgp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxT-He-IMQ">
+                                <rect key="frame" x="100" y="469" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="录制时长：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-yg-eO9">
+                                <rect key="frame" x="100" y="256" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-3C-j1S">
+                                <rect key="frame" x="176" y="206" width="62" height="30"/>
+                                <state key="normal" title="停止录制"/>
+                                <connections>
+                                    <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTF-ZZ-ccv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOZ-3p-SY3">
+                                <rect key="frame" x="384" y="513" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CEb-QO-siF">
+                                <rect key="frame" x="50" y="510.5" width="314" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="Fr9-K6-y3q"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVo-ot-yhv">
+                                <rect key="frame" x="190" y="266.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peb-Gm-Sle">
+                                <rect key="frame" x="30" y="513" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-1Y-uYf">
+                                <rect key="frame" x="90" y="74" width="234" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="FdY-wB-cqr"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分贝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpK-Sv-eOM">
+                                <rect key="frame" x="15" y="66" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y7t-yg-eO9" firstAttribute="top" secondItem="Ch2-3C-j1S" secondAttribute="bottom" constant="20" id="0Vt-bc-SfT"/>
+                            <constraint firstItem="CEb-QO-siF" firstAttribute="centerY" secondItem="peb-Gm-Sle" secondAttribute="centerY" id="2T6-19-q8H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EOZ-3p-SY3" secondAttribute="trailing" constant="30" id="BAg-O9-FOu"/>
+                            <constraint firstItem="Pmb-xU-S0P" firstAttribute="centerX" secondItem="oT3-IT-19X" secondAttribute="centerX" id="Beg-Mc-hfB"/>
+                            <constraint firstItem="EOZ-3p-SY3" firstAttribute="centerY" secondItem="peb-Gm-Sle" secondAttribute="centerY" id="EAJ-W0-PnR"/>
+                            <constraint firstItem="peb-Gm-Sle" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="J4a-F8-rwG"/>
+                            <constraint firstItem="Ch2-3C-j1S" firstAttribute="top" secondItem="oT3-IT-19X" secondAttribute="bottom" constant="20" id="JZS-nR-Ac2"/>
+                            <constraint firstItem="ofd-2D-9UZ" firstAttribute="centerX" secondItem="oT3-IT-19X" secondAttribute="centerX" id="K0i-Pk-Gxa"/>
+                            <constraint firstItem="peb-Gm-Sle" firstAttribute="top" secondItem="HxT-He-IMQ" secondAttribute="bottom" constant="23" id="KqO-z7-OKb"/>
+                            <constraint firstItem="HxT-He-IMQ" firstAttribute="top" secondItem="ofd-2D-9UZ" secondAttribute="bottom" constant="22" id="MWF-Ej-3P3"/>
+                            <constraint firstItem="cVo-ot-yhv" firstAttribute="leading" secondItem="Y7t-yg-eO9" secondAttribute="trailing" constant="3" id="N6Q-nT-dbn"/>
+                            <constraint firstItem="Pmb-xU-S0P" firstAttribute="top" secondItem="Gr3-dO-M0N" secondAttribute="bottom" constant="20" id="Nyf-b2-JJs"/>
+                            <constraint firstItem="I3S-41-gvc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OJr-Ym-zKq"/>
+                            <constraint firstItem="Ch2-3C-j1S" firstAttribute="centerX" secondItem="oT3-IT-19X" secondAttribute="centerX" id="ZUx-c2-B0W"/>
+                            <constraint firstItem="ofd-2D-9UZ" firstAttribute="top" secondItem="Pmb-xU-S0P" secondAttribute="bottom" constant="20" id="a6z-Qe-KCI"/>
+                            <constraint firstItem="CEb-QO-siF" firstAttribute="leading" secondItem="peb-Gm-Sle" secondAttribute="trailing" constant="20" id="dT0-CD-bkC"/>
+                            <constraint firstItem="cVo-ot-yhv" firstAttribute="centerY" secondItem="Y7t-yg-eO9" secondAttribute="centerY" id="ddA-En-7gr"/>
+                            <constraint firstItem="z8c-1Y-uYf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="g4Z-cc-WL6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z8c-1Y-uYf" secondAttribute="trailing" constant="90" id="gyO-9V-Udr"/>
+                            <constraint firstItem="I3S-41-gvc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="jcR-tz-iiq"/>
+                            <constraint firstItem="Y7t-yg-eO9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="m02-cJ-vMj"/>
+                            <constraint firstItem="HxT-He-IMQ" firstAttribute="leading" secondItem="Y7t-yg-eO9" secondAttribute="leading" id="m51-Pg-7xV"/>
+                            <constraint firstItem="Gr3-dO-M0N" firstAttribute="top" secondItem="Y7t-yg-eO9" secondAttribute="bottom" constant="40" id="p03-ts-QxJ"/>
+                            <constraint firstItem="Gr3-dO-M0N" firstAttribute="centerX" secondItem="oT3-IT-19X" secondAttribute="centerX" id="poN-Fs-N1P"/>
+                            <constraint firstItem="z8c-1Y-uYf" firstAttribute="centerY" secondItem="tpK-Sv-eOM" secondAttribute="centerY" id="qmv-3h-2C3"/>
+                            <constraint firstItem="tpK-Sv-eOM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="rjD-e2-qYU"/>
+                            <constraint firstItem="oT3-IT-19X" firstAttribute="top" secondItem="I3S-41-gvc" secondAttribute="bottom" constant="20" id="sLM-Si-cBR"/>
+                            <constraint firstItem="oT3-IT-19X" firstAttribute="centerX" secondItem="I3S-41-gvc" secondAttribute="centerX" id="tZp-yy-H77"/>
+                            <constraint firstItem="EOZ-3p-SY3" firstAttribute="leading" secondItem="CEb-QO-siF" secondAttribute="trailing" constant="20" id="wWE-Vv-exZ"/>
+                            <constraint firstItem="z8c-1Y-uYf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="wyH-Pk-nev"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playProgress" destination="CEb-QO-siF" id="f0f-bA-m57"/>
+                        <outlet property="playTimeLbl" destination="peb-Gm-Sle" id="XTi-tA-Y6I"/>
+                        <outlet property="playTotalTimeLbl" destination="EOZ-3p-SY3" id="6dK-V2-Yvo"/>
+                        <outlet property="recordPeekPowerProgress" destination="z8c-1Y-uYf" id="4f7-Xu-LfD"/>
+                        <outlet property="recordTimeLbl" destination="cVo-ot-yhv" id="RDv-gb-Vxk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
